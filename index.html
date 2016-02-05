@@ -1,8 +1,88 @@
 <html>
 	<head>
 		<script type="text/javascript" src="js/eloquent.js"></script>
+		<style>
+			body {
+				font-family: Verdana, Geneva, sans-serif;
+				max-width: 750px;
+				margin-left:auto;
+				margin-right:auto;
+				padding: 30px;
+			}
+			.code {
+				background-color: #272727;
+				margin: 20px auto;
+				padding: 5px 15px;
+				border-radius: 5px;
+				border: solid 1px black;
+			}
+			.code p {
+				font-family: "Courier New", Courier, monospace;
+				color: white;
+			}
+			span.mono {
+				font-family: "Courier New", Courier, monospace;
+				color: #AB80FF;
+			}
+		</style>
 	</head>
 	<body>
+		<h1>Eloquent Javascript - Notes on Chapter 1 - Basic Javascript: Values, Variables and Control Flow</h1>
 		
+		<h2>Values</h2>
+		<p>Binary code is just data. Values are representation of that data. <strong>There are six basic types of values: numbers, strings, Booleans, objects, functions and undefined values.</strong></p>
+		
+		<h3>Numbers and arithmetic</h3>
+		<div class="code">
+			<p>
+				100 + 4 * 12
+			</p>
+		</div>
+		<ul>
+			<li>
+				<span class="mono">+ * / -</span> symbols are called <em>operators</em>.
+			</li>
+			<li>
+				<span class="mono">* /</span> have higher <em>precedence</em> so will be executed before + -.
+			</li>
+			<li>
+				If they have similar presidence, it executes left to right.
+			</li>
+			<li>A <em>modulo</em> operator is a <span class="mono">140 % 30</span> where it divides and then gives the remainer. So, it will return a value of the remainder, <span class="mono">20</span>.</li>
+		</ul>
+
+		<h3>
+			Strings
+		</h3>
+		<p>Text.</p>
+		<ul>
+			<li>
+				It can be wrapped in single or double quotes.
+			</li>
+			<li>
+				It can be <span class="mono">"con" + "cat" + "enated" + "."</span>
+			</li>
+			<li>
+				Escape quotes using a <span class="mono">\</span>.
+			</li>
+			<li>
+				<span class="mono">/n</span> makes a new line.
+			</li>
+			<li>
+				<span class="mono">/t</span> adds a tab.
+			</li>
+		</ul>
+
+		<h3>Unary Operators</h3>
+		<p>Will need to read more on this. But these are a operators expressed as text. So, <span class="mono">typeof 4.5</span> will yield a result of <span class="mono">"number"</span>.</p>
+
+		<h3>
+			Boolean Values, Comparisons, and Boolean Logic
+		</h3>
+		<ul>
+			<li>
+				Only two values of Boolean. <span class="mono">true</span> and <span class="mono">false</span>.
+			</li>
+		</ul>
 	</body>
 </html>

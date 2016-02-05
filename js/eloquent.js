@@ -1,1 +1,1 @@
-console.log("Harro!");
+console.log(140 % 30);
