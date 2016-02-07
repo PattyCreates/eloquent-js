@@ -24,11 +24,16 @@
 				font-family: "Courier New", Courier, monospace;
 				color: #AB80FF;
 			}
+			h1, h2 {
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
 		<h1>Eloquent Javascript - Notes on Chapter 1 - Basic Javascript: Values, Variables and Control Flow</h1>
-		
+		<hr>
+
+		<!-- Values -->
 		<h2>Values</h2>
 		<p>Binary code is just data. Values are representation of that data. <strong>There are six basic types of values: numbers, strings, Booleans, objects, functions and undefined values.</strong></p>
 		
@@ -79,10 +84,66 @@
 		<h3>
 			Boolean Values, Comparisons, and Boolean Logic
 		</h3>
+		<h4>Comparisons</h4>
 		<ul>
 			<li>
 				Only two values of Boolean. <span class="mono">true</span> and <span class="mono">false</span>.
 			</li>
+			<li>
+				Alphabetical holds true. <span class="mono">"Bertha" < "Charlie"</span>
+			</li>
+			<li>
+				But, capitalization holds true as well. <span class="mono">"bertha" > "Charlie"</span>. So Uppercase is less than lowercase. Which is kinda contrarian. But it holds up to the unicode standard.
+			</li>
+			<li>
+				Comparisons are left to right.
+			</li>
+			<li>
+				<span class="mono">true && false</span> returns false.  <span class="mono">&&</span> needs to have both be true. so <span class="mono">true && true</span> does work.
+			</li>
+			<li>
+				<span class="mono">||</span> is <em>or</em> so either value has to return true. <span class="mono">true || false</span> will return true.
+			</li>
+			<li>
+				Here are few more operators.
+				<ul>
+					<li>
+						<span class="mono">!</span> is not.
+					</li>
+					<li>
+						<span class="mono">!=</span> is not equal to. <span class="mono">!true</span> comes out false
+					</li>
+					<li>
+						<span class="mono">==</span> is equal to.
+					</li>
+					<li>
+						<span class="mono">===</span> is absolutely not equal to.
+					</li>
+					<li>
+						<span class="mono">>=</span> is greater than or equal to.
+					</li>
+					<li>
+						<span class="mono">=<</span> is equal to or less than.
+					</li>
+				</ul>
+			</li>
 		</ul>
+		<hr>
+
+		<!-- Variables -->
+		<h2>Variables</h2>
+		<p>Variables store data. Can be altered. Not permanent. Sometimes they can be holding <em>expressions</em> which are simple data values such as numbers or strings (they don't perform anything, they just are). On other times they can be holding <em>statements</em>, which are functions with outputs. Statements end with a <span class="mono">;</span>. Variables can hold either.</p>
+		<div class="code">
+			<p>var berthasDebt = 150;</p>
+			<p>var berthasDebt = 150-20;</p>
+			<p><span class="mono">//berthasDebt will return to be 130.</span></p>
+		</div>
+		<h3>Keywords and reserved words.</h3>
+		<p>these are words you can't use. They have special values stored with them already.</p>
+		<span class="mono">abstract boolean break byte case catch char class const continue debugger default delete do double else enum export extends false final finally float for function goto if implements import in instanceof int interface long native new null package private protected public return short static super switch synchronized this throw throws transient true try typeof var void volatile while with</span>
+		<hr>
+
+		<!-- Control Flow -->
+		<h2>Control Flow</h2>
 	</body>
 </html>
